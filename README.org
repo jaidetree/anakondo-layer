@@ -1,0 +1,58 @@
+#+TITLE: anakondo layer
+# Document tags are separated with "|" char
+# The example below contains 2 tags: "layer" and "web service"
+# Avaliable tags are listed in <spacemacs_root>/.ci/spacedoc-cfg.edn
+# under ":spacetools.spacedoc.config/valid-tags" section.
+#+TAGS: layer|clojure|anakondo|kondo
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                                         :noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+- [[#support][Support]]
+- [[#credits][Credits]]
+- [[#the-future][The Future]]
+- [[#license][License]]
+
+* Description
+A [[https://www.spacemacs.org/][Spacemacs]] layer for the Clojure emacs plugin [[https://github.com/didibus/anakondo][Anakondo]] powered by [[https://github.com/borkdude/clj-kondo][Kondo]]. See instructions for installing [[https://github.com/didibus/anakondo][Anakondo]] prior to the MELPA release.
+
+** Features:
+  - Autocomplete
+  - Static Analysis
+  - Lint
+
+* Install
+First, clone this repo to your =~/.emacs.d/private/= directory.
+
+
+#+BEGIN_SRC shell
+git clone git@github.com:eccentric-j/anakondo-layer.git ~/.emacs.d/private/anakondo
+#+END_SRC
+
+
+Second, clone the latest anakondo code into =~/.emacs.d/private/anakondo/local/=
+
+#+BEGIN_SRC shell
+git clone git@github.com:didibus/anakondo.git ~/.emacs.d/private/anakondo/local/anakondo
+#+END_SRC
+
+
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =anakondo= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+Finally reload emacs config with ~f e R~.
+
+* Support
+If you have issues with Anakondo in general please refer to [[https://github.com/didibus/anakondo/issues][Anakondo Issues on GitHub]]. For issues around this specific Spacemacs layer, please create an issue here as Didibus is not responsible for this layer.
+
+* Credits
+Full credit goes to [[https://github.com/didibus/anakondo][Didibus' Anakondo emacs package]], leveraging [[https://github.com/borkdude/clj-kondo][Borkdude's kondo Clojure linter]] for the heavy lifting.
+
+* The Future
+- As this library matures it may be published to MELPA, if this repo is still useful and is not updated please create a pull request.
+- At some point in the future the tooling may consolidate into a single org or even repo. In the event that occurs, I will likely transfer ownership and create a new repo to link to it.
+
+* License
+MIT License, see accompanying [[./LICENSE][LICENSE]] file.
