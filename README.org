@@ -23,26 +23,17 @@ A [[https://www.spacemacs.org/][Spacemacs]] layer for the Clojure emacs plugin [
   - Lint
 
 * Install
-First, clone this repo to your =~/.emacs.d/private/= directory.
-
+Begin by cloning this repo to your =~/.emacs.d/private/= directory.
 
 #+BEGIN_SRC shell
 git clone git@github.com:eccentric-j/anakondo-layer.git ~/.emacs.d/private/anakondo
 #+END_SRC
 
-
-Second, clone the latest anakondo code into =~/.emacs.d/private/anakondo/local/=
-
-#+BEGIN_SRC shell
-git clone git@github.com:didibus/anakondo.git ~/.emacs.d/private/anakondo/local/anakondo
-#+END_SRC
-
-
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =anakondo= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
-Finally reload emacs config with ~f e R~.
+Finally reload emacs config with ~f e R~. Now anakondo should activate when editing Clojure files or you can activate it manually by invoking =anakondo-minor-mode=.
 
 * Support
 If you have issues with Anakondo in general please refer to [[https://github.com/didibus/anakondo/issues][Anakondo Issues on GitHub]]. For issues around this specific Spacemacs layer, please create an issue here as Didibus is not responsible for this layer.
