@@ -29,9 +29,7 @@
 ;;; Code:
 
 (defconst anakondo-packages
-  '((anakondo :location (recipe
-                         :fetcher github
-                         :repo "didibus/anakondo")))
+  '(anakondo)
   "The list of Lisp packages required by the anakondo layer.
 
 Each entry is either:
